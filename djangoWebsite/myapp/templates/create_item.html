@@ -1,0 +1,17 @@
+{#//myapp/templates/index.html#}
+{% extends "base2.html" %}
+
+{% block title %}Add New Employee Records{% endblock title %}
+
+{% block content %}
+<div class="container-fluid">
+    <form method="POST" class="post-form" action='/addnewpati/' enctype="multipart/form-data">
+    {% csrf_token %}
+        {{ form.as_p }}
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}

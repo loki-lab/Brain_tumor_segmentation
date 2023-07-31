@@ -1,0 +1,19 @@
+{#//myapp/templates/index.html#}
+{% extends "base2.html" %}
+
+{% block title %}Update Employee Records{% endblock title %}
+
+{% block content %}
+    <h2>Edit Book - {{ patientz.PatientID }}</h2>
+<div class="container-fluid">
+    <form method="POST" class="post-form"  enctype="multipart/form-data">
+    {% csrf_token %}
+        {{ form.as_p }}
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+
+    </form>
+</div>
+{% endblock content %}

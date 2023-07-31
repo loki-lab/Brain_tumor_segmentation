@@ -1,0 +1,59 @@
+{% extends 'base2.html' %}
+{% block content %}
+
+
+    <div class="container-fluid">
+
+                    <!-- Page Heading -->
+
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">DataTables</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Bệnh</th>
+                                            <th>Tên bệnh nhân</th>
+                                            <th>chuẩn đoán bởi bác sĩ</th>
+                                            <th>Image</th>
+                                            <th>Ngày</th>
+                                            <th>Chức năng</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    {% for comment in comments %}
+
+                                        <tr>
+                                            <td>{{ comment.NameOfDisease}}</td>
+                                            <td>{{ comment.PatientID}}</td>
+                                            <td>{{ comment.ResultByDoctor}}</td>
+                                            {% if comment.InputImage %}
+                                            <td><img src="{{ comment.InputImage.url }}"width="300px" height="250px"></td>
+                                            {% endif %}
+                                            {% if comment.OutputImage %}
+                                            <td><img src="{{ comment.OutputImage.url }}"width="300px" height="250px"></td>
+                                            {% endif %}
+{#                                            <td>{{ comment.Date}}</td>#}
+                                            <td>
+
+{#                                                <a href="{% url 'comment_update' comment.id %}" class="btn btn-primary">update</a>#}
+                                                <a href="{% url 'comment_delete' comment.id %}" class="btn btn-primary">delete</a>
+                                            </td>
+
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+{% endblock content %}
