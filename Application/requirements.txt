@@ -1,0 +1,7 @@
+attrdict
+nvidia-pyindex
+tritonclient[all]
+opencv-python
+matplotlib
+numpy
+pillow
