@@ -1,0 +1,19 @@
+name: "unet_model"
+platform: "tensorflow_savedmodel"
+max_batch_size : 4
+input [
+  {
+    name: "input_1"
+    data_type: TYPE_FP32
+    dims: [ 256, 256, 3 ]
+    
+  }
+]
+output [
+  {
+    name: "conv2d_18"
+    data_type: TYPE_FP32
+    dims: [ 256, 256 ,1]
+    
+  }
+]
