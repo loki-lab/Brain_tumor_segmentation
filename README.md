@@ -17,15 +17,18 @@
 <p>
     - Docker 
     - Python 3.9 
-    - Model Unet (tải tại đây:)
+    - Model Unet (tải tại đây:https://drive.google.com/file/d/1VT4JcOrNhDGy7cwoReRZQi_tWZPqJ3ex/view?usp=drive_link)
 </p>
 <h3>Cài đặt model</h3>
-<p>Chúng ta sẽ cần clone github này về và sử dụng model unet đã được chúng tôi train ở phần chuẩn bị. Hãy bỏ model vào </br>
+<p>- Chúng ta sẽ cần clone github này về và sử dụng model unet đã được chúng tôi train ở phần chuẩn bị. Hãy bỏ model vào </br>
     thư mục: \model\deploy\model_repository\unet_model\1
 </p>
-<p>Để serving model, chúng ta cần chạy lệnh docker ở phía bên dưới trong thư mục model/deploy:</br>
+<p>- Để serving model, chúng ta cần chạy lệnh docker ở phía bên dưới trong thư mục model/deploy:</br>
     "docker run --gpus=1 --rm --net=host -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:23.11-py3 tritonserver --model-repository=/models"
 </p>
+<h3>Run App</h3>
+<p>chỉ đơn giản là chạy file my_tkinter.py trong thư mục Application</p>
+
 <h2>Training model Unet</h2>
 <p>Bạn có thể tham khảo thêm cách training ở notebook chứa trong thư mục model/training </p>
 
