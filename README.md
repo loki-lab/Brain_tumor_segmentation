@@ -5,3 +5,8 @@
 <div>
     <img src="assets/demo.png" alt="" width="600">
 </div>
+<h2>GUI</h2>
+<div>
+    <img src="assets/image.png" alt="" width="350">
+    <img src="assets/image-1.png" alt="" width="350">
+</div>
