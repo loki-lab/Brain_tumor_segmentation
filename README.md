@@ -15,9 +15,9 @@
 <h2>Cài đặt AI</h2>
 <h3>Những thứ cần chuẩn bị</h3>
 <p>
-    - Docker 
-    - Python 3.9 
-    - Model Unet (tải tại đây:https://drive.google.com/file/d/1VT4JcOrNhDGy7cwoReRZQi_tWZPqJ3ex/view?usp=drive_link)
+    - Docker </br>
+    - Python 3.9 </br>
+    - Model Unet (tải tại đây:https://drive.google.com/file/d/1VT4JcOrNhDGy7cwoReRZQi_tWZPqJ3ex/view?usp=drive_link) </br>
 </p>
 <h3>Cài đặt model</h3>
 <p>- Chúng ta sẽ cần clone github này về và sử dụng model unet đã được chúng tôi train ở phần chuẩn bị. Hãy bỏ model vào </br>
