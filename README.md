@@ -23,5 +23,5 @@
 <p>Chúng ta sẽ cần clone github này về và sử dụng model unet đã được chúng tôi train ở phần chuẩn bị. Hãy bỏ model vào </br>
     thư mục dưới đây: 
 </p>
-<command type="command">\model\deploy\model_repository\unet_model\1</command>
+<p style="text-shadow: 2px 2px;" >\model\deploy\model_repository\unet_model\1</p>
 
