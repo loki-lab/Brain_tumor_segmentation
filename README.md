@@ -5,8 +5,23 @@
 <div>
     <img src="assets/demo.png" alt="" width="600">
 </div>
-<h2>GUI</h2>
+<h2>GUI Application</h2>
 <div>
+    <p>Đây là phần GUI của app AI. Chúng tôi đã tạo lên một GUI đơn giản với Tkinter và nó sẽ phụ trách việc tương tác </br>
+        với model qua API và trực quan quá trình làm việc một cách dễ dàng.</p>
     <img src="assets/image.png" alt="" width="350">
     <img src="assets/image-1.png" alt="" width="350">
 </div>
+<h2>Cài đặt AI</h2>
+<h3>Những thứ cần chuẩn bị</h3>
+<p>
+    - Docker 
+    - Python 3.9 
+    - Model Unet (tải tại đây:)
+</p>
+<h3>Cài đặt model</h3>
+<p>Chúng ta sẽ cần clone github này về và sử dụng model unet đã được chúng tôi train ở phần chuẩn bị. Hãy bỏ model vào </br>
+    thư mục dưới đây: 
+</p>
+'''bash 
+\model\deploy\model_repository\unet_model\1
