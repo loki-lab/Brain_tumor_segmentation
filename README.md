@@ -21,7 +21,11 @@
 </p>
 <h3>Cài đặt model</h3>
 <p>Chúng ta sẽ cần clone github này về và sử dụng model unet đã được chúng tôi train ở phần chuẩn bị. Hãy bỏ model vào </br>
-    thư mục dưới đây: 
+    thư mục: \model\deploy\model_repository\unet_model\1
 </p>
-<p style="text-shadow: 2px 2px;" >\model\deploy\model_repository\unet_model\1</p>
+<p>Để serving model, chúng ta cần chạy lệnh docker ở phía bên dưới trong thư mục model/deploy:</br>
+    "docker run --gpus=1 --rm --net=host -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:23.11-py3 tritonserver --model-repository=/models"
+</p>
+<h2>Training model Unet</h2>
+<p>Bạn có thể tham khảo thêm cách training ở notebook chứa trong thư mục model/training </p>
 
